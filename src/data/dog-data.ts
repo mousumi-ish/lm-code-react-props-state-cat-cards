@@ -21,4 +21,6 @@ const dogData: Array<Dog> = [
     birthYear: 2015,
   },
 ];
+dogData.forEach((dog) => (dog.id = uuidv4()));
+console.log(dogData);
 export default dogData;

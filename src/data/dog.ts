@@ -3,5 +3,5 @@ export default interface Dog {
   species: string;
   favFoods: Array<string>;
   birthYear: number;
-  //id?: string;
+  id?: string;
 }

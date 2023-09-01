@@ -14,10 +14,12 @@ function App() {
   const [cats, setCats] = useState<Array<Cat>>(CatData);
   const catCount = cats.length;
   const [dogs, setDogs] = useState<Array<Dog>>(dogData);
+  const dogCount = dogs.length;
   return (
     <>
       <Navbar />
-      <Header catCount={catCount} />
+      <Header catCount={catCount} dogCount={dogCount} />
+      <h1 />
 
       <main>
         <div className="cards__wrapper">
@@ -31,6 +33,7 @@ function App() {
               catIndex={index}
             />
           ))}
+
           {dogs.map((dog, index) => (
             <DogCard
               key={index}
