@@ -1,17 +1,19 @@
 import "./App.css";
 import Cat from "./data/cat";
+import Dog from "./data/dog";
 import { useState } from "react";
 import Navbar from "./components/navbar";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import CatCard from "./components/cat_card";
-
+import dogData from "./data/dog-data";
 import CatData from "./data/catData";
+import DogCard from "./components/dog_card";
 function App() {
   // JavaScript/TypeScript code can be inserted here!
   const [cats, setCats] = useState<Array<Cat>>(CatData);
   const catCount = cats.length;
-
+  const [dogs, setDogs] = useState<Array<Dog>>(dogData);
   return (
     <>
       <Navbar />
@@ -26,6 +28,16 @@ function App() {
               species={cat.species}
               favFoods={cat.favFoods}
               birthYear={cat.birthYear}
+              catIndex={index}
+            />
+          ))}
+          {dogs.map((dog, index) => (
+            <CatCard
+              key={index}
+              name={dog.name}
+              species={dog.species}
+              favFoods={dog.favFoods}
+              birthYear={dog.birthYear}
               catIndex={index}
             />
           ))}
