@@ -38,6 +38,7 @@ function App() {
               species={dog.species}
               favFoods={dog.favFoods}
               birthYear={dog.birthYear}
+              dogIndex={index}
             />
           ))}
         </div>
