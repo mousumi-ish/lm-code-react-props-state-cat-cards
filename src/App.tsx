@@ -32,13 +32,12 @@ function App() {
             />
           ))}
           {dogs.map((dog, index) => (
-            <CatCard
+            <DogCard
               key={index}
               name={dog.name}
               species={dog.species}
               favFoods={dog.favFoods}
               birthYear={dog.birthYear}
-              catIndex={index}
             />
           ))}
         </div>

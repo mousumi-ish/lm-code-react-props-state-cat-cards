@@ -1,3 +1,4 @@
+const image = [];
 interface DogCardProps {
   name: string;
   species: string;
