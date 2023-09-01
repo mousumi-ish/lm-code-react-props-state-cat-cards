@@ -1,5 +1,5 @@
 interface DogImageProps {
-  image: string;
+  image?: string;
   altText: string;
 }
 const DogImage: React.FC<DogImageProps> = ({ image, altText }) => (

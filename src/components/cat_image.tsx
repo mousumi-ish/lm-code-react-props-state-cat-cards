@@ -1,5 +1,5 @@
 interface CatImageProps {
-  image: string;
+  image?: string;
   altText: string;
   licenceType: string;
   licenceUrl: string;

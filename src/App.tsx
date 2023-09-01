@@ -9,6 +9,7 @@ import CatCard from "./components/cat_card";
 import dogData from "./data/dog-data";
 import CatData from "./data/catData";
 import DogCard from "./components/dog_card";
+import CatSubmitForm from "./components/submitForm";
 function App() {
   // JavaScript/TypeScript code can be inserted here!
   const [cats, setCats] = useState<Array<Cat>>(CatData);
@@ -46,6 +47,7 @@ function App() {
           ))}
         </div>
       </main>
+      <CatSubmitForm />
       <Footer />
     </>
   );
