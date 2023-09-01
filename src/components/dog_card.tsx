@@ -52,7 +52,7 @@ const DogCard: React.FC<DogCardProps> = ({
       )}
       <h3 className="card__text card__header">{name}</h3>
       <p className="card__text">{species}</p>
-      <p className="card__text">{favFoods}</p>
+      <p className="card__text">{favFoods.join(" , ")}</p>
       <p className="card__text">{birthYear}</p>
     </div>
   );
